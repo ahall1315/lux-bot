@@ -19,4 +19,4 @@ client.once("ready", () => {
 client.on("messageCreate", commandHandler);
 
 // Login to Discord with the client's token
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);

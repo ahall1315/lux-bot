@@ -4,7 +4,7 @@ const xur = require("./commands/xur.js");
 
 module.exports = async function (msg) {
     console.log(msg);
-    if (msg.content.toLowerCase().includes("hello") && (msg.author.id != process.env.BOTUSERID)) {
+    if (msg.content.toLowerCase().includes("hello") && (msg.author.id != process.env.APP_ID)) {
         msg.channel.send(`Hello ${msg.author.username}!`);
     }
 
